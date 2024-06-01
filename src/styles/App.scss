@@ -1,64 +1,74 @@
+// Aplica a los elementos html y body para asegurar que ocupen el 100% de la altura de la ventana
 html, body {
   height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+  margin: 0; // Elimina el margen por defecto
+  padding: 0; // Elimina el padding por defecto
+  font-family: Arial, sans-serif; // Establece la fuente de la página
 }
 
+// Estilo para el body
 body {
-  background: linear-gradient(to bottom, #9effb8, #add8e6);
+  background: linear-gradient(to bottom, #9effb8, #add8e6); // Fondo con un degradado vertical de colores
 }
 
+// Estilo para la clase container, asegurando que ocupe el 100% de la altura disponible
 .container {
   height: 100%;
 }
 
+// Estilo para la clase App
 .App {
-  text-align: center;
+  text-align: center; // Centra el texto
 
   h2 {
-    color: #333;
+    color: #333; // Color del texto del encabezado
   }
 
   form {
-    margin-bottom: 20px;
+    margin-bottom: 20px; // Margen inferior para separar el formulario del contenido siguiente
   }
 
+  // Estilo para el input de texto dentro del formulario
   input[type="text"] {
-    padding: 8px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 8px; // Espaciado interno
+    margin-right: 10px; // Margen a la derecha para separar del botón
+    border: 1px solid #ccc; // Borde gris claro
+    border-radius: 4px; // Bordes redondeados
   }
 
+  // Estilo para el botón dentro del formulario
   button {
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    padding: 8px 16px; // Espaciado interno
+    background-color: #007bff; // Color de fondo azul
+    color: #fff; // Color del texto blanco
+    border: none; // Sin borde
+    border-radius: 4px; // Bordes redondeados
+    cursor: pointer; // Cambia el cursor a pointer
 
     &:hover {
-      background-color: #0056b3;
+      background-color: #0056b3; // Color de fondo al pasar el mouse por encima
     }
   }
 
+  // Estilo para la lista sin ordenar
   ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; // Elimina los puntos de la lista
+    padding: 0; // Elimina el padding
   }
 
+  // Estilo para los elementos de lista
   li {
-    margin-bottom: 8px;
+    margin-bottom: 8px; // Margen inferior para separar los elementos de lista
   }
 
+  // Estilo para el botón dentro de los elementos de lista
   button {
-    margin-left: 5px;
-    background-color: #dc3545;
+    margin-left: 5px; // Margen a la izquierda para separar del texto
+    background-color: #dc3545; // Color de fondo rojo
 
     &:hover {
-      background-color: #bd2130;
+      background-color: #bd2130; // Color de fondo al pasar el mouse por encima
     }
   }
 }
+
